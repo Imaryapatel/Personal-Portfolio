@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="project.html">Projects</a></li>
+            <li class="link active"><a href="about.html">About</a></li>
+            <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- about section -->
+    <section class="about-section">
+        <div class="about">
+            <div class="about-img-container">
+               <img src="../asset/arya.jpg" alt="" class="about-img">
+               <button class="download-cv-btn">Download cv</button>
+            </div>
+
+            <p class="about-info">
+                I am a self taught web developer with a strong eye for innovative design, a keen understanding of techniques geared towards optimum user experience. I am skilled at writing clean and efficient code and have a strong technical education with passion for Creativity/Design.
+                <br>
+                <br>
+                My main focus is to create websites which are user friendly and unique which contains innovativeness as well as mesmerizingly amalgation of captivating animations which keeps a hold of the user.
+                <br>
+                <br>
+                Because of this skills I was hired for an internship at cWiser Infotech where I worked closely with designers to take wireframes from conception to implementation and design and improve user interfaces, Provided solutions to a few front end difficulties faced and worked on building highly responsive applications.
+            </p>
+
+
+        </div>
+
+        <!-- skills section -->
+         <div class="skill-section">
+             <h1 class="heading">Skills</h1>
+         </div>
+
+         <div id="tag"></div>
+         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+    var entries = [
+        {label : 'html'},
+        {label : 'css'},
+        {label : 'javascript'},
+        {label : 'node.js'},
+        {label : 'react.js'},
+        {label : 'mongoDb'},
+        {label : 'bootstrap'},
+        {label : 'C'},
+        {label : 'Java'},
+        {label : 'JQuery'},
+        {label : 'Git'},
+        {label : 'dsa'},
+        {label : 'oops'},
+    ];
+
+    var settings = {
+        entries : entries,
+        width : 640,
+        height : 580,
+        radius : '90%',
+        radiusMin : 75,
+        bgDraw : true,
+        bgColor : '#000',
+        opacityOver : 1.00,
+        opacityOut : 0.05,
+        opacitySpeed : 9,
+        fov : 800,
+        speed : 1,
+        fontFamily : 'Courier, Arial, sans-serif',
+        fontSize : '40',
+        fontColor : '#00ff7f',
+        fontWeight : 'bold',
+        fontStyle : 'normal',
+        fontStretch : 'normal',
+        fontToUppercase : true
+    };
+    
+    $('#tag').svg3DTagCloud(settings);   
+
+});
+    </script>
+
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+</html>
